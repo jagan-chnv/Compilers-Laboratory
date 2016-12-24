@@ -1,0 +1,41 @@
+decl
+	integer a,function1(integer &a;boolean d),function2(integer &b;);
+enddecl
+
+integer function1(integer &a;boolean d){
+	decl
+		integer temp1;
+	enddecl
+	begin
+                if(d) then
+		a = a + 2;
+		endif;
+		temp1 = function2(a);
+		return 1;
+	end
+}
+
+integer function2(integer &b;){
+	decl
+	enddecl
+	begin
+		b = b * 3;
+		return 1;
+	end
+}
+
+integer main(){
+	decl
+		integer c,temp1,temp2;
+		boolean d;
+	enddecl
+	begin 
+                d=FALSE;
+		read(c);
+		temp1 = function1(c,d);
+		write(c);
+		return 1;
+	end
+}
+
+

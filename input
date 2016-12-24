@@ -1,0 +1,31 @@
+
+decl
+  pair p;
+  integer i;
+  integer fun(pair u);
+
+enddecl
+
+integer fun(pair u)
+{
+	
+
+	begin
+	i=snd(u);
+	write(i);
+	return 1;
+	end
+
+}
+
+integer main() {
+      decl
+      pair q;
+      enddecl
+	begin
+	  q=(3,7);
+	  i=fun(q);
+	 
+		return 1;
+	end  
+}
